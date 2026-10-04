@@ -14,7 +14,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap" rel="stylesheet">
-<style>
+
+  <style>
 :root{
   --ink:#1A1A1A; --body:#333333; --muted:#595959; --rule:#D9D9D9; --accent:#A32A1F; --ph:#EDEDED;
   --sans:'Libre Franklin',system-ui,-apple-system,'Segoe UI',sans-serif;
@@ -44,6 +45,7 @@ img{max-width:100%}
 .hero-text{flex:1;display:flex;flex-direction:column;gap:24px}
 h1{margin:0;font-size:clamp(40px,6vw,54px);line-height:1.08;font-weight:700;letter-spacing:-0.025em}
 .lede{margin:0;max-width:660px;font-family:var(--serif);font-size:20px;line-height:1.55;color:var(--body)}
+.lede a{text-decoration:underline;text-underline-offset:2px}
 .actions{display:flex;flex-wrap:wrap;gap:16px}
 .btn{display:inline-flex;align-items:center;height:52px;padding:0 28px;border:1px solid var(--ink);font-size:15px;font-weight:600}
 .btn.primary{background:var(--ink);color:#fff}
@@ -84,11 +86,8 @@ h3{margin:0;font-size:28px;font-weight:700;letter-spacing:-0.02em}
 
 /* about */
 .about{border-top:1px solid var(--ink)}
-.about .wrap{display:flex;gap:96px;padding-top:72px;padding-bottom:72px}
-.about-text{flex:1.2;display:flex;flex-direction:column;gap:20px}
-.about-text h2{margin-bottom:8px}
-.about-text p{margin:0;max-width:620px;font-family:var(--serif);font-size:18px;line-height:1.6;color:var(--body)}
-.facts{flex:1;margin:0}
+.about .wrap{padding-top:72px;padding-bottom:72px;max-width:700px}
+.facts{margin:0}
 .fact{border-top:1px solid var(--ink);padding:20px 0}
 .fact dt{margin:0 0 6px;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
 .fact dd{margin:0;font-family:var(--serif);font-size:18px;line-height:1.4}
@@ -117,7 +116,6 @@ h2.big{font-size:clamp(38px,5vw,52px);line-height:1;font-weight:800;letter-spaci
   .clips .wrap,.about .wrap{padding-top:48px;padding-bottom:48px}
   h2{font-size:34px}
   .clips h2{margin-bottom:28px}
-  .about .wrap{flex-direction:column;gap:40px}
   .contact .wrap{padding-top:48px}
   .contact-links{align-items:flex-start}
 }
@@ -150,8 +148,8 @@ h2.big{font-size:clamp(38px,5vw,52px);line-height:1;font-weight:800;letter-spaci
   <div class="wrap">
     <div class="hero-text">
       <h1 id="name">Hyeyoon Cho</h1>
-      <p class="lede">I&rsquo;m a bilingual journalist based in the Bay Area, pursuing my master&rsquo;s through the Investigative Reporting Program at UC Berkeley&rsquo;s Graduate School of Journalism. This summer, I was a news intern at Reuters in Seoul, where I became a jack-of-all-trades journalist covering the two Koreas, business, markets and climate.</p>
-      <p class="lede">I hit the ground running, and I&rsquo;m always eager to learn new subjects and new worlds. I feel most useful when people tell me their stories candidly, and what keeps me going, most of all, is my curiosity and compassion for people.</p>
+      <p class="lede">I&rsquo;m a bilingual journalist based in the Bay Area, pursuing my Master of Journalism with a focus on business and investigative reporting at UC Berkeley&rsquo;s Graduate School of Journalism. This summer, I was a news intern at Reuters in Seoul, where I became a jack-of-all-trades journalist covering the two Koreas, business, markets and climate.</p>
+      <p class="lede">Previously, I cut my teeth as a local reporter, with bylines in the San Francisco Chronicle, KQED, Mercury News, Fresno Bee and Los Angeles Daily News. I&rsquo;m fortunate to have been recognized by industry professionals, receiving the 2026 Overseas Press Club Foundation Scholarship, the White House Correspondents&rsquo; Association Scholarship, a Pulitzer Center fellowship and more.</p>
       <div class="actions">
         <a class="btn primary" href="#work">Read my clips</a>
         <a class="btn secondary" href="#contact">Contact</a>
@@ -369,15 +367,12 @@ h2.big{font-size:clamp(38px,5vw,52px);line-height:1;font-weight:800;letter-spaci
 
 <section id="about" class="about" aria-labelledby="about-title">
   <div class="wrap">
-    <div class="about-text">
-      <h2 id="about-title">About</h2>
-      <p>I was selected as one of the 12 global news interns for <a href="https://www.reuters.com/authors/hyeyoon-cho/" target="_blank" rel="noopener noreferrer">Reuters</a> during summer 2026, where I covered the Korean peninsula, economy, energy and corporate news.</p>
-      <p>I&rsquo;m currently pursuing a master&rsquo;s degree from the UC Berkeley Graduate School of Journalism, where I focused on narrative and investigative reporting. Before that I studied media and communications at McGill University.</p>
-    </div>
+    <h2 id="about-title">About</h2>
     <dl class="facts">
       <div class="fact"><dt>Education</dt><dd>UC Berkeley Graduate School of Journalism, Master of Journalism<br>McGill University, Bachelor of Arts</dd></div>
       <div class="fact"><dt>Awards &amp; fellowship</dt><dd>Overseas Press Club Foundation, White House Correspondents Association, Pulitzer Center, Asian American Journalists Association</dd></div>
       <div class="fact"><dt>Languages</dt><dd>Korean, English and French</dd></div>
+      <div class="fact"><dt>Skills</dt><dd>Satellite image analysis, Datawrapper, R, Premiere Pro, visual production (Sony A7C)</dd></div>
     </dl>
   </div>
 </section>
