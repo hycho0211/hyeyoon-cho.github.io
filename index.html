@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hyeyoon Cho, Journalist</title>
+<meta name="description" content="Hyeyoon Cho is a journalist whose work has appeared in Reuters, the San Francisco Chronicle, KQED, the Mercury News, the Fresno Bee and the Los Angeles Daily News.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hyeyoon Cho, Journalist">
+<meta property="og:description" content="Clips on business and the economy, climate, health and North Korea.">
+<!-- After you have your domain, add a preview image for link sharing:
+<meta property="og:image" content="https://YOUR-DOMAIN/images/portrait.jpg"> -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%231A1A1A'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='700' text-anchor='middle' fill='%23fff'%3EHC%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1A1A1A; --body:#333333; --muted:#595959; --rule:#D9D9D9; --accent:#A32A1F; --ph:#EDEDED;
+  --sans:'Libre Franklin',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --serif:'Source Serif 4',Georgia,serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:12px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{margin:0;background:#fff;color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a{color:inherit;text-decoration:none}
+a:hover{color:var(--accent)}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+img{max-width:100%}
+.skip{position:absolute;left:-9999px;top:8px;background:var(--ink);color:#fff;padding:12px 16px;z-index:20;font-size:14px;font-weight:600}
+.skip:focus{left:8px;color:#fff}
+.wrap{max-width:1360px;margin:0 auto;padding:0 64px}
+
+/* header */
+.site-header{border-bottom:1px solid var(--ink)}
+.site-header .wrap{height:88px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{font-size:22px;font-weight:800;letter-spacing:-0.01em;white-space:nowrap}
+.site-header nav{display:flex;gap:8px}
+.site-header nav a{padding:12px 16px;font-size:14px;font-weight:500}
+
+/* hero */
+.hero .wrap{display:flex;align-items:center;gap:72px;padding-top:64px;padding-bottom:64px}
+.hero-text{flex:1;display:flex;flex-direction:column;gap:24px}
+h1{margin:0;font-size:clamp(40px,6vw,54px);line-height:1.08;font-weight:700;letter-spacing:-0.025em}
+.lede{margin:0;max-width:660px;font-family:var(--serif);font-size:20px;line-height:1.55;color:var(--body)}
+.actions{display:flex;flex-wrap:wrap;gap:16px}
+.btn{display:inline-flex;align-items:center;height:52px;padding:0 28px;border:1px solid var(--ink);font-size:15px;font-weight:600}
+.btn.primary{background:var(--ink);color:#fff}
+.btn.primary:hover{background:var(--accent);border-color:var(--accent);color:#fff}
+.btn.secondary:hover{border-color:var(--accent)}
+.portrait{width:340px;height:420px;flex:none;object-fit:cover;object-position:center 20%;display:block}
+
+/* clips */
+.clips{border-top:1px solid var(--ink)}
+.clips .wrap{padding-top:72px;padding-bottom:72px}
+h2{margin:0;font-size:40px;font-weight:700;letter-spacing:-0.02em}
+.clips h2{margin-bottom:40px}
+.row{margin-bottom:56px}
+.row:last-child{margin-bottom:0}
+.row-head{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:48px;margin-bottom:20px}
+h3{margin:0;font-size:28px;font-weight:700;letter-spacing:-0.02em}
+.row-controls{display:flex;align-items:center;gap:12px}
+.count{margin-right:8px;font-size:14px;color:var(--muted)}
+.arrow{width:48px;height:48px;padding:0;border:1px solid var(--ink);background:#fff;color:var(--ink);display:inline-flex;align-items:center;justify-content:center;cursor:pointer}
+.arrow.next{background:var(--ink);color:#fff}
+.arrow:not(:disabled):hover{border-color:var(--accent);background:var(--accent);color:#fff}
+.arrow:disabled{opacity:.35;cursor:default}
+.track{display:flex;align-items:stretch;gap:32px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;-ms-overflow-style:none;cursor:grab;overscroll-behavior-x:contain}
+.track::-webkit-scrollbar{display:none}
+.track.dragging{scroll-snap-type:none;cursor:grabbing;user-select:none}
+.card{flex:0 0 min(560px,84vw);scroll-snap-align:start;display:flex;flex-direction:column;gap:12px}
+.thumb{aspect-ratio:5/2;background:var(--ph);overflow:hidden}
+.thumb img{width:100%;height:100%;object-fit:cover;display:block;-webkit-user-drag:none}
+.thumb.ph{display:flex;align-items:center;justify-content:center;font-size:14px;color:var(--muted)}
+.meta{margin:0;font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.headline{margin:0;font-size:24px;line-height:1.15;font-weight:700;letter-spacing:-0.02em}
+.dek{margin:0;font-family:var(--serif);font-size:16px;line-height:1.55;color:var(--body)}
+.cta{margin-top:auto;padding-top:4px;font-size:14px;font-weight:600;color:var(--accent)}
+.cta:hover{text-decoration:underline;color:var(--accent)}
+.progress{margin-top:20px;height:3px;background:#E5E5E5}
+.progress span{display:block;height:3px;width:0;background:var(--ink);transition:width .3s ease}
+@media (prefers-reduced-motion:reduce){.progress span{transition:none}}
+
+/* about */
+.about{border-top:1px solid var(--ink)}
+.about .wrap{display:flex;gap:96px;padding-top:72px;padding-bottom:72px}
+.about-text{flex:1.2;display:flex;flex-direction:column;gap:20px}
+.about-text h2{margin-bottom:8px}
+.about-text p{margin:0;max-width:620px;font-family:var(--serif);font-size:18px;line-height:1.6;color:var(--body)}
+.facts{flex:1;margin:0}
+.fact{border-top:1px solid var(--ink);padding:20px 0}
+.fact dt{margin:0 0 6px;font-size:12px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.fact dd{margin:0;font-family:var(--serif);font-size:18px;line-height:1.4}
+
+/* contact */
+.contact{border-top:1px solid var(--ink)}
+.contact .wrap{padding-top:72px;padding-bottom:40px}
+.contact-top{display:flex;justify-content:space-between;align-items:flex-start;gap:32px;flex-wrap:wrap;margin-bottom:56px}
+h2.big{font-size:clamp(38px,5vw,52px);line-height:1;font-weight:800;letter-spacing:-0.03em}
+.contact-links{display:flex;flex-direction:column;align-items:flex-end;gap:16px}
+.email{font-size:clamp(20px,2.4vw,26px);font-weight:600;letter-spacing:-0.01em;border-bottom:2px solid var(--ink);overflow-wrap:anywhere}
+.email:hover{border-color:var(--accent)}
+.elsewhere{display:flex;gap:8px;font-size:14px;font-weight:500}
+.elsewhere a{padding:12px}
+.fine{border-top:1px solid var(--rule);padding-top:20px;font-size:13px;color:var(--muted)}
+
+/* smaller screens */
+@media (max-width:900px){
+  .wrap{padding:0 24px}
+  .site-header .wrap{height:72px}
+  .site-header nav{gap:0}
+  .site-header nav a{padding:12px 8px}
+  .brand{font-size:20px}
+  .hero .wrap{flex-direction:column;align-items:flex-start;gap:40px;padding-top:40px;padding-bottom:48px}
+  .portrait{width:100%;max-width:340px;height:auto;aspect-ratio:340/420}
+  .clips .wrap,.about .wrap{padding-top:48px;padding-bottom:48px}
+  h2{font-size:34px}
+  .clips h2{margin-bottom:28px}
+  .about .wrap{flex-direction:column;gap:40px}
+  .contact .wrap{padding-top:48px}
+  .contact-links{align-items:flex-start}
+}
+@media (max-width:700px){
+  .thumb{aspect-ratio:16/9}
+  h3{font-size:24px}
+  .headline{font-size:22px}
+  .row-head{flex-wrap:wrap}
+  .lede{font-size:18px}
+  .track{gap:20px}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="#top">Hyeyoon Cho</a>
+    <nav aria-label="Primary">
+      <a href="#work">Clips</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section id="top" class="hero" aria-labelledby="name">
+  <div class="wrap">
+    <div class="hero-text">
+      <h1 id="name">Hyeyoon Cho</h1>
+      <p class="lede">Bylines in Reuters, San Francisco Chronicle, KQED, Fresno Bee, Mercury News, and Los Angeles Daily News. I also do investigative work built on public records, satellite imagery and open-source research.</p>
+      <div class="actions">
+        <a class="btn primary" href="#work">Read my clips</a>
+        <a class="btn secondary" href="#contact">Contact</a>
+      </div>
+    </div>
+    <img class="portrait" src="images/portrait.jpg" alt="Portrait of Hyeyoon Cho" width="340" height="420">
+  </div>
+</section>
+
+<section id="work" class="clips" aria-labelledby="clips-title">
+  <div class="wrap">
+    <h2 id="clips-title">Clips</h2>
+
+<div class="row" data-row>
+  <div class="row-head">
+    <h3 id="h-biz">Business and economy</h3>
+    <div class="row-controls">
+      <span class="count" aria-live="polite"></span>
+      <button class="arrow prev" type="button" aria-label="Previous business and economy stories" hidden><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button class="arrow next" type="button" aria-label="Next business and economy stories" hidden><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+    </div>
+  </div>
+  <div class="track" role="region" aria-labelledby="h-biz" tabindex="0">
+<article class="card">
+  <div class="thumb"><img src="images/scams-markets-blur.jpg" alt="Motion-blurred trading room in front of a Hana Bank screen showing the KOSPI" width="560" height="224" loading="lazy" draggable="false" style="object-position:center 40%"></div>
+  <p class="meta">Reuters · Sep 16, 2026</p>
+  <h4 class="headline"><a href="https://www.reuters.com/legal/government/korean-retail-investors-lost-250-million-scams-during-stock-swing-2026-09-16/" target="_blank" rel="noopener noreferrer">Korean retail investors lost $250 million from scams during stock swing</a></h4>
+  <p class="dek">Police data seen by Reuters shows reported losses to stock-tip chatroom fraud rose by about a fifth in the first half of 2026, to roughly $250 million.</p>
+  <a class="cta" href="https://www.reuters.com/legal/government/korean-retail-investors-lost-250-million-scams-during-stock-swing-2026-09-16/" target="_blank" rel="noopener noreferrer">Read on Reuters &rarr;</a>
+</article>
+<article class="card">
+  <div class="thumb"><img src="images/stock-mania-hana-board.jpg" alt="A woman walks past a Hana Bank screen showing a falling KOSPI" width="560" height="224" loading="lazy" draggable="false" style="object-position:center 45%"></div>
+  <p class="meta">Reuters · Aug 21, 2026</p>
+  <h4 class="headline"><a href="https://www.reuters.com/business/finance/euphoria-despair-korea-reckons-with-stock-manias-emotional-toll-2026-08-21/" target="_blank" rel="noopener noreferrer">From euphoria to despair, Korea reckons with stock mania&#x27;s emotional toll</a></h4>
+  <p class="dek">After a steep fall in the KOSPI, retail investors and officials face a psychological reckoning over leveraged trading.</p>
+  <a class="cta" href="https://www.reuters.com/business/finance/euphoria-despair-korea-reckons-with-stock-manias-emotional-toll-2026-08-21/" target="_blank" rel="noopener noreferrer">Read on Reuters &rarr;</a>
+</article>
+<article class="card">
+  <div class="thumb"><img src="images/korea-exports-cars.jpg" alt="Rows of new cars parked in front of stacked shipping containers at a port" width="560" height="224" loading="lazy" draggable="false" style="object-position:center"></div>
+  <p class="meta">Reuters · Jul 30, 2026</p>
+  <h4 class="headline"><a href="https://www.reuters.com/world/asia-pacific/south-korea-export-growth-seen-easing-chip-boom-hold-2026-07-30/" target="_blank" rel="noopener noreferrer">South Korea export growth seen easing but chip boom to hold</a></h4>
+  <p class="dek">A Reuters poll of economists expects July export growth to slow from June&#x27;s near half-century high but stay strong on surging AI chip demand.</p>
+  <a class="cta" href="https://www.reuters.com/world/asia-pacific/south-korea-export-growth-seen-easing-chip-boom-hold-2026-07-30/" target="_blank" rel="noopener noreferrer">Read on Reuters &rarr;</a>
+</article>
+<article class="card">
+  <div class="thumb"><img src="images/lee-apartment.jpg" alt="A high-rise apartment tower seen from below through tree branches" width="560" height="224" loading="lazy" draggable="false" style="object-position:center"></div>
+  <p class="meta">Reuters · Jul 21, 2026</p>
+  <h4 class="headline"><a href="https://www.reuters.com/world/asia-pacific/south-koreas-lee-accused-skirting-his-own-loan-curbs-with-sale-apartment-2026-07-21/" target="_blank" rel="noopener noreferrer">South Korea&#x27;s Lee accused of skirting his own loan curbs with sale of apartment</a></h4>
+  <p class="dek">Documents showing the president extended credit to buyers of his Seoul apartment drew backlash from critics who say it undercuts his mortgage restrictions.</p>
+  <a class="cta" href="https://www.reuters.com/world/asia-pacific/south-koreas-lee-accused-skirting-his-own-loan-curbs-with-sale-apartment-2026-07-21/" target="_blank" rel="noopener noreferrer">Read on Reuters &rarr;</a>
+</article>
+<article class="card">
+  <div class="thumb"><img src="images/chip-hub-construction.jpg" alt="Tower cranes over a large semiconductor plant under construction" width="560" height="224" loading="lazy" draggable="false" style="object-position:center"></div>
+  <p class="meta">Reuters · Jul 21, 2026</p>
+  <h4 class="headline"><a href="https://www.reuters.com/business/energy/power-water-needs-test-south-koreas-push-build-ai-chip-hub-beyond-seoul-2026-07-21/" target="_blank" rel="noopener noreferrer">Power, water needs test South Korea&#x27;s push to build AI chip hub beyond Seoul</a></h4>
+  <p class="dek">Local opposition to the power and water demands of a planned chip hub in the southwest is set to be among its biggest obstacles.</p>
+  <a class="cta" href="https://www.reuters.com/business/energy/power-water-needs-test-south-koreas-push-build-ai-chip-hub-beyond-seoul-2026-07-21/" target="_blank" rel="noopener noreferrer">Read on Reuters &rarr;</a>
+</article>
+<article class="card">
+  <div class="thumb ph" aria-hidden="true"><span>Reuters</span></div>
+  <p class="meta">Reuters · Jul 8, 2026</p>
+  <h4 class="headline"><a href="https://www.reuters.com/business/energy/uaes-adnoc-expands-energy-partnership-with-south-korea-2026-07-08/" target="_blank" rel="noopener noreferrer">UAE&#x27;s ADNOC expands energy partnership with South Korea</a></h4>
+  <p class="dek">ADNOC signed a long-term energy security partnership with South Korea covering crude supply, emergency coordination and strategic storage.</p>
+  <a class="cta" href="https://www.reuters.com/business/energy/uaes-adnoc-expands-energy-partnership-with-south-korea-2026-07-08/" target="_blank" rel="noopener noreferrer">Read on Reuters &rarr;</a>
+</article>
+<article class="card">
+  <div class="thumb ph" aria-hidden="true"><span>Reuters</span></div>
+  <p class="meta">Reuters · Jun 29, 2026</p>
+  <h4 class="headline"><a href="https://www.reuters.com/world/asia-pacific/south-korea-exports-set-grow-strongest-pace-nearly-5-decades-2026-06-29/" target="_blank" rel="noopener noreferrer">South Korea exports set to grow at strongest pace in nearly 5 decades</a></h4>
+  <p class="dek">A Reuters poll of economists points to South Korea&#x27;s strongest annual export growth since 1978, driven by record chip shipments.</p>
+  <a class="cta" href="https://www.reuters.com/world/asia-pacific/south-korea-exports-set-grow-strongest-pace-nearly-5-decades-2026-06-29/" target="_blank" rel="noopener noreferrer">Read on Reuters &rarr;</a>
+</article>
+<article class="card">
+  <div class="thumb"><img src="images/stock-mania-hana-board.jpg" alt="A woman walks past a Hana Bank screen showing a falling KOSPI" width="560" height="224" loading="lazy" draggable="false" style="object-position:center 45%"></div>
+  <p class="meta">Reuters · Jul 17, 2026 · Contributed reporting</p>
+  <h4 class="headline"><a href="https://www.reuters.com/world/asia-pacific/how-korean-stocks-turned-trusty-bellwether-ai-frenzy-2026-07-17/" target="_blank" rel="noopener noreferrer">How Korean stocks turned from trusty bellwether to AI frenzy</a></h4>
+  <p class="dek">A look at how South Korea&#x27;s stock market shifted from a steady bellwether into an AI-driven frenzy.</p>
+  <a class="cta" href="https://www.reuters.com/world/asia-pacific/how-korean-stocks-turned-trusty-bellwether-ai-frenzy-2026-07-17/" target="_blank" rel="noopener noreferrer">Read on Reuters &rarr;</a>
+</article>
+  </div>
+  <div class="progress" aria-hidden="true"><span></span></div>
+</div>
+<div class="row" data-row>
+  <div class="row-head">
+    <h3 id="h-climate">Climate</h3>
+    <div class="row-controls">
+      <span class="count" aria-live="polite"></span>
+      <button class="arrow prev" type="button" aria-label="Previous climate stories" hidden><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button class="arrow next" type="button" aria-label="Next climate stories" hidden><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+    </div>
+  </div>
+  <div class="track" role="region" aria-labelledby="h-climate" tabindex="0">
+<article class="card">
+  <div class="thumb"><img src="images/corals-paran.jpg" alt="Pink soft corals on a reef off Jeju island" width="560" height="224" loading="lazy" draggable="false" style="object-position:center"></div>
+  <p class="meta">Reuters · Sep 7, 2026</p>
+  <h4 class="headline"><a href="https://www.reuters.com/business/environment/slumping-south-korean-corals-worry-divers-scientists-studying-climate-change-2026-09-07/" target="_blank" rel="noopener noreferrer">&#x27;Slumping&#x27; South Korean corals worry divers, scientists studying climate change</a></h4>
+  <p class="dek">Divers and researchers on Jeju island are watching soft corals droop and die as warmer seas and harsher weather take a toll.</p>
+  <a class="cta" href="https://www.reuters.com/business/environment/slumping-south-korean-corals-worry-divers-scientists-studying-climate-change-2026-09-07/" target="_blank" rel="noopener noreferrer">Read on Reuters &rarr;</a>
+</article>
+<article class="card">
+  <div class="thumb"><img src="images/drone-heatwave.jpg" alt="A drone fitted with a loudspeaker and thermal camera hovers in front of its operator" width="560" height="224" loading="lazy" draggable="false" style="object-position:center"></div>
+  <p class="meta">Reuters · Aug 6, 2026</p>
+  <h4 class="headline"><a href="https://www.reuters.com/business/environment/south-korea-province-deploys-drones-warn-elderly-farmers-amid-heatwave-2026-08-06/" target="_blank" rel="noopener noreferrer">South Korea province deploys drones to warn elderly farmers amid heatwave</a></h4>
+  <p class="dek">Drones with loudspeakers and thermal cameras urge older farmers in North Gyeongsang Province to rest during the country&#x27;s worst heatwave in years.</p>
+  <a class="cta" href="https://www.reuters.com/business/environment/south-korea-province-deploys-drones-warn-elderly-farmers-amid-heatwave-2026-08-06/" target="_blank" rel="noopener noreferrer">Read on Reuters &rarr;</a>
+</article>
+<article class="card">
+  <div class="thumb ph" aria-hidden="true"><span>Mongabay</span></div>
+  <p class="meta">Mongabay · Jul 24, 2026</p>
+  <h4 class="headline"><a href="https://news.mongabay.com/2026/07/california-solar-project-threatens-mojave-wildlife-corridor-scientists-say/" target="_blank" rel="noopener noreferrer">California solar project threatens Mojave wildlife corridor, scientists say</a></h4>
+  <p class="dek">Scientists and advocates say a solar project approved by California threatens a network of wildlife movement through the Mojave Desert.</p>
+  <a class="cta" href="https://news.mongabay.com/2026/07/california-solar-project-threatens-mojave-wildlife-corridor-scientists-say/" target="_blank" rel="noopener noreferrer">Read on Mongabay &rarr;</a>
+</article>
+  </div>
+  <div class="progress" aria-hidden="true"><span></span></div>
+</div>
+<div class="row" data-row>
+  <div class="row-head">
+    <h3 id="h-health">Health</h3>
+    <div class="row-controls">
+      <span class="count" aria-live="polite"></span>
+      <button class="arrow prev" type="button" aria-label="Previous health stories" hidden><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button class="arrow next" type="button" aria-label="Next health stories" hidden><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+    </div>
+  </div>
+  <div class="track" role="region" aria-labelledby="h-health" tabindex="0">
+<article class="card">
+  <div class="thumb"><img src="images/chronicle-afghan-family.jpg" alt="An Afghan family poses inside their bakery and deli in Fremont" width="560" height="224" loading="lazy" draggable="false" style="object-position:center 32%"></div>
+  <p class="meta">San Francisco Chronicle</p>
+  <h4 class="headline"><a href="https://www.sfchronicle.com/bayarea/article/afghan-refugees-federal-cuts-21131843.php" target="_blank" rel="noopener noreferrer">The Bay Area&#x27;s &#x27;Little Kabul&#x27; once welcomed Afghan refugees. Federal cuts are changing that.</a></h4>
+  <p class="dek">Cuts to refugee resettlement are changing life for Afghans who built new lives in Fremont.</p>
+  <a class="cta" href="https://www.sfchronicle.com/bayarea/article/afghan-refugees-federal-cuts-21131843.php" target="_blank" rel="noopener noreferrer">Read on San Francisco Chronicle &rarr;</a>
+</article>
+<article class="card">
+  <div class="thumb"><img src="images/kqed-in-home-care.jpg" alt="Two women laugh together, one seated in a wheelchair with a tablet mounted beside her" width="560" height="224" loading="lazy" draggable="false" style="object-position:center 0%"></div>
+  <p class="meta">KQED · Jan 2026</p>
+  <h4 class="headline"><a href="https://www.kqed.org/news/12070141/id-be-left-alone-medicaid-cuts-put-disabled-patients-in-home-care-at-risk" target="_blank" rel="noopener noreferrer">&#x27;I&#x27;d Be Left Alone&#x27;: Medicaid cuts put disabled patients&#x27; in-home care at risk</a></h4>
+  <p class="dek">Federal Medicaid cuts threaten the in-home services that let disabled Californians avoid moving into facilities.</p>
+  <a class="cta" href="https://www.kqed.org/news/12070141/id-be-left-alone-medicaid-cuts-put-disabled-patients-in-home-care-at-risk" target="_blank" rel="noopener noreferrer">Read on KQED &rarr;</a>
+</article>
+<article class="card">
+  <div class="thumb"><img src="images/aaja-seniors-notes.jpg" alt="Attendees at a public meeting hold handwritten notes and paper handouts" width="560" height="224" loading="lazy" draggable="false" style="object-position:center 50%"></div>
+  <p class="meta">AAJA VOICES · Jun 26, 2026</p>
+  <h4 class="headline"><a href="https://voices.aaja.org/stories/minneapolis-2026/san-franciscos-proposed-budget-cuts-threaten-asian-american-seniors-community-programs/" target="_blank" rel="noopener noreferrer">San Francisco&#x27;s proposed budget cuts threaten Asian American seniors&#x27; community programs</a></h4>
+  <p class="dek">A community center serving immigrant seniors in the Excelsior district faces the loss of city funding under the mayor&#x27;s proposed budget.</p>
+  <a class="cta" href="https://voices.aaja.org/stories/minneapolis-2026/san-franciscos-proposed-budget-cuts-threaten-asian-american-seniors-community-programs/" target="_blank" rel="noopener noreferrer">Read on AAJA VOICES &rarr;</a>
+</article>
+<article class="card">
+  <div class="thumb"><img src="images/mercury-medi-cal-banner.jpg" alt="A woman looks out a window beside a hand-painted disability rights banner" width="560" height="224" loading="lazy" draggable="false" style="object-position:center 60%"></div>
+  <p class="meta">Mercury News · Jun 6, 2026</p>
+  <h4 class="headline"><a href="https://www.mercurynews.com/2026/06/06/a-medi-cal-lifeline-keeps-californians-at-home-now-it-faces-cuts/" target="_blank" rel="noopener noreferrer">A Medi-Cal lifeline keeps Californians at home. Now it faces cuts</a></h4>
+  <p class="dek">Funding for the in-home care that lets disabled Californians stay in their homes is under pressure from more than one direction.</p>
+  <a class="cta" href="https://www.mercurynews.com/2026/06/06/a-medi-cal-lifeline-keeps-californians-at-home-now-it-faces-cuts/" target="_blank" rel="noopener noreferrer">Read on Mercury News &rarr;</a>
+</article>
+<article class="card">
+  <div class="thumb"><img src="images/dailynews-caregiver.jpg" alt="A caregiver helps a woman in a wheelchair adjust her glasses" width="560" height="224" loading="lazy" draggable="false" style="object-position:center 10%"></div>
+  <p class="meta">Los Angeles Daily News · Jun 5, 2026</p>
+  <h4 class="headline"><a href="https://www.dailynews.com/2026/06/05/newsom-wants-to-cut-caregiver-service-that-many-la-county-seniors-rely-on-saying-its-underused/" target="_blank" rel="noopener noreferrer">Newsom wants to cut caregiver service that many LA County seniors rely on, saying it&#x27;s underused</a></h4>
+  <p class="dek">The governor&#x27;s budget targets a Medi-Cal program of backup caregivers that older and disabled people turn to when their regular aide can&#x27;t come.</p>
+  <a class="cta" href="https://www.dailynews.com/2026/06/05/newsom-wants-to-cut-caregiver-service-that-many-la-county-seniors-rely-on-saying-its-underused/" target="_blank" rel="noopener noreferrer">Read on Los Angeles Daily News &rarr;</a>
+</article>
+<article class="card">
+  <div class="thumb"><img src="images/fresno-farmer-bokchoy.jpg" alt="A farmer in a wide-brimmed hat holds a bok choy plant in a sunlit field" width="560" height="224" loading="lazy" draggable="false" style="object-position:center 40%"></div>
+  <p class="meta">Fresno Bee</p>
+  <h4 class="headline"><a href="https://www.fresnobee.com/news/article314215776.html" target="_blank" rel="noopener noreferrer">Small-scale farmers of color in Fresno hurt by USDA cuts to food bank program</a></h4>
+  <p class="dek">Cuts to a federal local-food purchase program are hitting small farms of color in Fresno.</p>
+  <a class="cta" href="https://www.fresnobee.com/news/article314215776.html" target="_blank" rel="noopener noreferrer">Read on Fresno Bee &rarr;</a>
+</article>
+  </div>
+  <div class="progress" aria-hidden="true"><span></span></div>
+</div>
+<div class="row" data-row>
+  <div class="row-head">
+    <h3 id="h-nk">North Korea</h3>
+    <div class="row-controls">
+      <span class="count" aria-live="polite"></span>
+      <button class="arrow prev" type="button" aria-label="Previous north korea stories" hidden><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></button>
+      <button class="arrow next" type="button" aria-label="Next north korea stories" hidden><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></button>
+    </div>
+  </div>
+  <div class="track" role="region" aria-labelledby="h-nk" tabindex="0">
+<article class="card">
+  <div class="thumb"><img src="images/kim-putin-handshake.jpg" alt="Kim Jong Un and Vladimir Putin shake hands between their national flags" width="560" height="224" loading="lazy" draggable="false" style="object-position:center 20%"></div>
+  <p class="meta">Reuters · Aug 16, 2026</p>
+  <h4 class="headline"><a href="https://www.reuters.com/world/china/north-koreas-kim-russias-putin-reaffirm-ties-korean-liberation-day-2026-08-16/" target="_blank" rel="noopener noreferrer">North Korea&#x27;s Kim, Russia&#x27;s Putin reaffirm ties on Korean Liberation Day</a></h4>
+  <p class="dek">Kim Jong Un replied to a congratulatory message from Putin marking the anniversary of Japan&#x27;s surrender, saying the two countries&#x27; ties are deepening.</p>
+  <a class="cta" href="https://www.reuters.com/world/china/north-koreas-kim-russias-putin-reaffirm-ties-korean-liberation-day-2026-08-16/" target="_blank" rel="noopener noreferrer">Read on Reuters &rarr;</a>
+</article>
+<article class="card">
+  <div class="thumb"><img src="images/north-korea-puppet-exercise.jpg" alt="US Army soldiers work on a river-crossing bridge during a joint exercise with South Korea" width="560" height="224" loading="lazy" draggable="false" style="object-position:center"></div>
+  <p class="meta">Reuters · Jul 17, 2026</p>
+  <h4 class="headline"><a href="https://www.reuters.com/business/media-telecom/north-korea-calls-seoul-puppet-its-role-us-maritime-exercise-2026-07-17/" target="_blank" rel="noopener noreferrer">North Korea calls Seoul a &#x27;puppet&#x27; for its role in US maritime exercise</a></h4>
+  <p class="dek">North Korean state media criticized South Korea&#x27;s part in a US-led naval exercise and warned that Seoul and Washington would bear responsibility for any escalation.</p>
+  <a class="cta" href="https://www.reuters.com/business/media-telecom/north-korea-calls-seoul-puppet-its-role-us-maritime-exercise-2026-07-17/" target="_blank" rel="noopener noreferrer">Read on Reuters &rarr;</a>
+</article>
+<article class="card">
+  <div class="thumb ph" aria-hidden="true"><span>Reuters</span></div>
+  <p class="meta">Reuters · Jun 30, 2026</p>
+  <h4 class="headline"><a href="https://www.reuters.com/world/asia-pacific/north-koreas-sanctioned-coal-trade-rebounds-un-monitoring-lapses-rights-group-2026-06-29/" target="_blank" rel="noopener noreferrer">North Korea&#x27;s sanctioned coal trade rebounds as UN monitoring lapses, rights group says</a></h4>
+  <p class="dek">A rights group says North Korea&#x27;s sanctioned coal and mineral exports have rebounded since UN monitoring of sanctions lapsed.</p>
+  <a class="cta" href="https://www.reuters.com/world/asia-pacific/north-koreas-sanctioned-coal-trade-rebounds-un-monitoring-lapses-rights-group-2026-06-29/" target="_blank" rel="noopener noreferrer">Read on Reuters &rarr;</a>
+</article>
+<article class="card">
+  <div class="thumb ph" aria-hidden="true"><span>Reuters</span></div>
+  <p class="meta">Reuters · Sep 11, 2026 · Contributed reporting</p>
+  <h4 class="headline"><a href="https://www.reuters.com/world/kim-jong-un-wants-north-koreans-have-more-state-sanctioned-fun-2026-09-11/" target="_blank" rel="noopener noreferrer">Kim Jong Un wants North Koreans to have more (state-sanctioned) fun</a></h4>
+  <p class="dek">Kim Jong Un is steering North Korean spending toward state-run leisure and retail, from waterparks to luxury malls.</p>
+  <a class="cta" href="https://www.reuters.com/world/kim-jong-un-wants-north-koreans-have-more-state-sanctioned-fun-2026-09-11/" target="_blank" rel="noopener noreferrer">Read on Reuters &rarr;</a>
+</article>
+<article class="card">
+  <div class="thumb ph" aria-hidden="true"><span>Reuters</span></div>
+  <p class="meta">Reuters · Jul 31, 2026</p>
+  <h4 class="headline"><a href="https://www.reuters.com/world/asia-pacific/north-koreas-economy-grew-35-last-year-deeper-ties-with-russia-china-seoul-says-2026-07-31/" target="_blank" rel="noopener noreferrer">North Korea&#x27;s economy grew 3.5% last year as China, Russia drew closer, Seoul says</a></h4>
+  <p class="dek">South Korea&#x27;s central bank estimates North Korea&#x27;s economy grew 3.5% in 2025, helped by closer trade with Russia and China.</p>
+  <a class="cta" href="https://www.reuters.com/world/asia-pacific/north-koreas-economy-grew-35-last-year-deeper-ties-with-russia-china-seoul-says-2026-07-31/" target="_blank" rel="noopener noreferrer">Read on Reuters &rarr;</a>
+</article>
+  </div>
+  <div class="progress" aria-hidden="true"><span></span></div>
+</div>
+  </div>
+</section>
+
+<section id="about" class="about" aria-labelledby="about-title">
+  <div class="wrap">
+    <div class="about-text">
+      <h2 id="about-title">About</h2>
+      <p>I was selected as one of the 12 global news interns for Reuters during summer 2026, where I covered the Korean peninsula, economy, energy and corporate news.</p>
+      <p>I hold a master&rsquo;s degree from the UC Berkeley Graduate School of Journalism, where I focused on narrative and investigative reporting. Before that I studied media and communications at McGill University.</p>
+    </div>
+    <dl class="facts">
+      <div class="fact"><dt>Education</dt><dd>UC Berkeley Graduate School of Journalism, Master of Journalism<br>McGill University, Bachelor of Arts</dd></div>
+      <div class="fact"><dt>Awards &amp; fellowship</dt><dd>Overseas Press Club Foundation, White House Correspondents Association, Pulitzer Center, Asian American Journalists Association</dd></div>
+      <div class="fact"><dt>Languages</dt><dd>Korean, English and French</dd></div>
+    </dl>
+  </div>
+</section>
+</main>
+
+<footer id="contact" class="contact">
+  <div class="wrap">
+    <div class="contact-top">
+      <h2 class="big">Get in touch</h2>
+      <div class="contact-links">
+        <a class="email" href="mailto:hyeyoon_cho@berkeley.edu">hyeyoon_cho@berkeley.edu</a>
+        <div class="elsewhere">
+          <a href="https://www.linkedin.com/in/hyeyoon-cho-b96300213/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://muckrack.com/hyeyoon-cho" target="_blank" rel="noopener noreferrer">Muck Rack</a>
+        </div>
+      </div>
+    </div>
+    <p class="fine">&copy; 2026 Hyeyoon Cho</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  document.querySelectorAll('[data-row]').forEach(function (row) {
+    var track = row.querySelector('.track');
+    var prev = row.querySelector('.prev');
+    var next = row.querySelector('.next');
+    var count = row.querySelector('.count');
+    var bar = row.querySelector('.progress span');
+    var cards = track.querySelectorAll('.card');
+    var n = cards.length;
+    prev.hidden = false;
+    next.hidden = false;
+
+    function gap() { return parseFloat(getComputedStyle(track).columnGap) || 0; }
+    function step() { return cards[0].getBoundingClientRect().width + gap(); }
+    function perView() { return Math.max(1, Math.floor((track.clientWidth + gap()) / step() + 0.01)); }
+
+    function update() {
+      var s = step();
+      var pv = perView();
+      var atStart = track.scrollLeft <= 2;
+      var atEnd = track.scrollLeft + track.clientWidth >= track.scrollWidth - 2;
+      var first = Math.round(track.scrollLeft / s) + 1;
+      var last = Math.min(n, first + pv - 1);
+      if (atEnd) { last = n; first = Math.max(1, n - pv + 1); }
+      count.textContent = n <= pv ? n + (n === 1 ? ' story' : ' stories') : first + ' to ' + last + ' of ' + n;
+      prev.disabled = atStart;
+      next.disabled = atEnd;
+      bar.style.width = Math.min(100, (track.scrollLeft + track.clientWidth) / track.scrollWidth * 100) + '%';
+    }
+
+    var ticking = false;
+    track.addEventListener('scroll', function () {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(function () { ticking = false; update(); });
+    }, { passive: true });
+    window.addEventListener('resize', update);
+
+    function go(dir) {
+      track.scrollBy({ left: dir * step(), behavior: reduce ? 'auto' : 'smooth' });
+    }
+    prev.addEventListener('click', function () { go(-1); });
+    next.addEventListener('click', function () { go(1); });
+
+    /* mouse drag (touch and trackpad already scroll natively) */
+    var down = false, moved = false, startX = 0, startLeft = 0;
+    track.addEventListener('pointerdown', function (e) {
+      if (e.pointerType !== 'mouse' || e.button !== 0) return;
+      down = true; moved = false; startX = e.clientX; startLeft = track.scrollLeft;
+    });
+    window.addEventListener('pointermove', function (e) {
+      if (!down) return;
+      var dx = e.clientX - startX;
+      if (!moved && Math.abs(dx) > 5) { moved = true; track.classList.add('dragging'); }
+      if (moved) track.scrollLeft = startLeft - dx;
+    });
+    window.addEventListener('pointerup', function () {
+      if (!down) return;
+      down = false;
+      if (moved) {
+        track.classList.remove('dragging');
+        var s = step();
+        track.scrollTo({ left: Math.round(track.scrollLeft / s) * s, behavior: reduce ? 'auto' : 'smooth' });
+      }
+    });
+    track.addEventListener('click', function (e) {
+      if (moved) { e.preventDefault(); e.stopPropagation(); moved = false; }
+    }, true);
+
+    update();
+  });
+})();
+</script>
+</body>
+</html>
